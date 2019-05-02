@@ -36,7 +36,7 @@ fi
 
 echo "<h3>Build</h3>"
 
-if $KFR_CONFIG_PRESENT; then
+if ($KFR_CONFIG_PRESENT && $REQ_PRESENT); then
     cat .kfr-ci.json | jq -r '. | .build[]' | bash
 fi
 
