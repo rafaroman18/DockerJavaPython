@@ -1,0 +1,10 @@
+{
+    "branch": "master",
+    "language": "c++,go,java,python",
+    "build": [
+        "python3 --version"
+    ],
+    "env": [
+        "token=aaaaaaa"
+    ]
+}
